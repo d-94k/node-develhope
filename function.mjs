@@ -1,3 +1,3 @@
 const triplicate = num => num*3;
 
-module.exports = triplicate;
+export default triplicate;
