@@ -4,7 +4,7 @@ Make an HTTP request with curl that shows the response headers for this URL: htt
 
 Q: What is the value of the content-type response header?
 
-A: ## $ curl https://jsonplaceholder.typicode.com/posts/1/comments -v ##
+A: ** $ curl https://jsonplaceholder.typicode.com/posts/1/comments -v **
 *   Trying 188.114.97.7:443...
 * Connected to jsonplaceholder.typicode.com (188.114.97.7) port 443 (#0)
 * ALPN: offers h2
@@ -48,7 +48,7 @@ A: ## $ curl https://jsonplaceholder.typicode.com/posts/1/comments -v ##
 * Connection state changed (MAX_CONCURRENT_STREAMS == 256)!
 < HTTP/2 200 
 < date: Sun, 08 Jan 2023 20:47:58 GMT
-< ## content-type: application/json; charset=utf-8 ##
+< ** content-type: application/json; charset=utf-8 **
 < x-powered-by: Express
 < x-ratelimit-limit: 1000
 < x-ratelimit-remaining: 999
