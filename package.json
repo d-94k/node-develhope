@@ -19,5 +19,9 @@
   "homepage": "https://github.com/d-94k/node-develhope#readme",
   "dependencies": {
     "figlet": "^1.5.2"
+  },
+  "devDependencies": {
+    "jest": "^29.3.1",
+    "supertest": "^6.3.3"
   }
 }
