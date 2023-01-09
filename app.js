@@ -1,15 +1,11 @@
 const { createServer } = require("node:http");
 
-function createApp () {
-    return createServer ((request, response) => {
+    const createApp = () => createServer ((request, response) => {
         response.codeStatus = 200;
 
-        response.setHeader ("Content-Type", "application/json");
+        response.setHeader("Content-Type", "text/html");
 
-        response.end(JSON.stringify({location: "Earth"}))
-    })
-};
+        response.end("<html>Welcome to the World Wide Web</html>");
+    });
 
-createApp.listen (3000, () => {
-    console.log ("hey")
-})
+module.exports = createApp;
