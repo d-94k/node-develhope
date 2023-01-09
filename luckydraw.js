@@ -1,5 +1,3 @@
-const process = require("process");
-
 function luckyDraw(player) {
   return new Promise((resolve, reject) => {
     const win = Boolean(Math.round(Math.random()));
@@ -14,12 +12,24 @@ function luckyDraw(player) {
   });
 }
 
-luckyDraw("Joe")
-  .then(message => console.log(message))
-  .catch(err => console.log(err))
-  .then(luckyDraw("Caroline")
-    .then(message => console.log(message)))
-    .catch(err => console.log(err))
-  .then(luckyDraw("Sabrina")
-    .then(message => console.log(message))
-    .catch(err => console.log(err)));
+
+(async function getResults () {
+  try {
+    const luckyTina = await luckyDraw ("Tina");
+    console.log (luckyTina);
+  } catch (e) {
+    console.log (e)
+  }
+  try {
+    const luckyJorge = await luckyDraw ("Jorge");
+    console.log (luckyJorge);
+  } catch (e) {
+    console.log (e)
+  }
+  try {
+    const luckyJulien = await luckyDraw ("Julien");
+    console.log (luckyJulien);
+  } catch (e) {
+    console.log (e)
+  }
+})();
