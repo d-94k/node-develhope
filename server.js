@@ -6,5 +6,5 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 require("express-async-errors");
 const app = (0, express_1.default)();
-app.get("/", (request, response) => response.send("Running!"));
+app.get("/", (request, response) => response.send("Pleaa!"));
 app.listen(3000, () => console.log("Server is running"));
